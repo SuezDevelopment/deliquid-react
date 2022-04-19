@@ -1,11 +1,11 @@
 {
   "name": "@deliquid/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeLiquid React Library",
   "main": "build/cjs/index.js",
   "module": "build/esm/index.js",
   "scripts": {
-    "rollup": "rollup -c",
+    "build": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
