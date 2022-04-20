@@ -5,7 +5,6 @@ import React, {
   ReactElement,
   CSSProperties,
 } from 'react';
-import './Button.css';
 
 export interface ButtonProps {
   disabled?: boolean;
