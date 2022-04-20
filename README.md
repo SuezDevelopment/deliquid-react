@@ -1,6 +1,6 @@
-# deliquid-react
+# `@deliquid/react`
 
-DeLiquid React Components
+Modular TypeScript payment components for Solana applications.
 
 ## Quickstart
 
