@@ -16,9 +16,12 @@ npm install @deliquid/react
 import React, { FC } from 'react';
 import { PaymentModalProvider, PaymentButton } from '@deliquid/react';
 
+const MERCHANT_NAME = "First Merchant";
+const MERCHANT_ADDRESS = "0x0000000000000000000000000000000000000000";
+
 export const Checkout: FC = () => {
     return (
-        <PaymentModalProvider>
+        <PaymentModalProvider name={MERCHANT_NAME} address={MERCHANT_ADDRESS}>
             <PaymentButton />
         </PaymentModalProvider>
     )
