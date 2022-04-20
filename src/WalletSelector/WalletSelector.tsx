@@ -2,8 +2,6 @@ import React, { FC } from 'react';
 import { Grid } from '@mui/material';
 import { FiberManualRecord } from '@mui/icons-material';
 
-import './index.css';
-
 export type Wallet = {
   name: string;
   icon: string;
@@ -41,8 +39,13 @@ export const WalletSelector: FC<{
   };
 
   return (
-    <div className='wallet-selector-container'>
-      <div className='wallet-selector'>
+    <div style={{ width: '100%' }}>
+      <div
+        style={{
+          backgroundColor: 'rgb(83, 83, 83, 0.24)',
+          borderRadius: '10px',
+        }}
+      >
         <Grid
           container
           justifyContent='space-between'
@@ -69,7 +72,9 @@ export const WalletSelector: FC<{
             </Grid>
           </Grid>
           <Grid item>
-            <span className='wallet-detected-text'>{renderWalletStatus()}</span>
+            <span style={{ color: 'grey', fontSize: '1em' }}>
+              {renderWalletStatus()}
+            </span>
           </Grid>
         </Grid>
       </div>

@@ -3,7 +3,6 @@ import { Modal, Box, Grid, Button } from '@mui/material';
 
 import { WalletSelector } from '../WalletSelector';
 import { usePaymentModal } from '../usePaymentModal';
-import './index.css';
 
 export interface PaymentModalProps {}
 
@@ -32,7 +31,13 @@ export const PaymentModal: FC<PaymentModalProps> = ({}) => {
         aria-labelledby='modal-modal-title'
         aria-describedby='modal-modal-description'
       >
-        <div className='main-container'>
+        <div
+          style={{
+            textAlign: 'center',
+            backgroundColor: '#23242d',
+            color: '#fff',
+          }}
+        >
           <Box sx={style}>
             <Grid container spacing={1} direction='column' p='0 1em'>
               <Grid item>

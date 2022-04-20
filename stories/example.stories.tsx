@@ -2,8 +2,8 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { PublicKey } from '@solana/web3.js';
 
-import { PaymentModalProvider } from './PaymentModalProvider';
-import { PaymentButton } from './PaymentButton';
+import { PaymentModalProvider } from '../src/PaymentModalProvider';
+import { PaymentButton } from '../src/PaymentButton';
 
 const recipient = new PublicKey('C1cyuePEi1nEFhK6sWXWKtMFUDvnNpny2XDoiD3y2bTj');
 const amount = 0;

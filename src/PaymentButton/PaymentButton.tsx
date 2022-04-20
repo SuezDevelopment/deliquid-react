@@ -3,7 +3,6 @@ import { PublicKey } from '@solana/web3.js';
 
 import { Button, ButtonProps } from '../Button';
 import { usePaymentModal } from '../usePaymentModal';
-import './index.css';
 
 export interface PaymentProps {
   recipient: PublicKey;

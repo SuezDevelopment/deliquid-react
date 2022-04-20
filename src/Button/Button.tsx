@@ -5,10 +5,9 @@ import React, {
   ReactElement,
   CSSProperties,
 } from 'react';
-import './index.css';
+import './Button.css';
 
 export interface ButtonProps {
-  className?: string;
   disabled?: boolean;
   endIcon?: ReactElement;
   onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
@@ -21,14 +20,28 @@ export interface ButtonProps {
 export const Button: FC<ButtonProps> = (props) => {
   return (
     <button
-      className={`payment-button ${props.className || ''}`}
+      className={`payment-button`}
       disabled={props.disabled}
       onClick={props.onClick}
       tabIndex={props.tabIndex || 0}
       type='button'
+      style={{
+        backgroundColor: '#23242d',
+        border: 'none',
+        color: '#fff',
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        fontSize: '16px',
+        fontWeight: '600',
+        height: '48px',
+        lineHeight: '48px',
+        padding: '0 24px',
+        borderRadius: '4px',
+      }}
     >
       {props.startIcon && (
-        <i className='payment-button-start-icon'>{props.startIcon}</i>
+        <i style={{ marginRight: '12px' }}>{props.startIcon}</i>
       )}
       {props.children}
       {props.endIcon && (
